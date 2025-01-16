@@ -4,7 +4,7 @@
 This repository contains the following files:
 1. one_layer.ipynb: the one-layer model with all experimentation
 2. final_one_layer.ipynb: the final one-layer model
-3. 2_layer.ipynb: the 2-layer model
+3. two_layer.ipynb: the 2-layer model
 4. Compiled_Reviews.txt: the product reviews
 5. embeddings.npy: word2vec embeddings 
 6. M.npy: bag of words embeddings
@@ -19,10 +19,10 @@ In order to run the final model:
 1. Open final_one_layer.ipynb
 2. Run all cells
 The final two cells show evaluation metrics and the outputs of the weight analysis.
-The 4th cell, titled "CREATE AN EMBEDDING MATRIX", shows the commented code for creating the bag of word embeddings. You can uncomment this to create the embeddings matrix from scratch, but by default the matrix is loaded from M.npy in order to save time when running the model.
 
 # RUNNING THE EXPERIMENTATION
-All experimentation is included in the file one_layer.ipynb. 
+All experimentation is included in the file one_layer.ipynb. The cell outputs show the results of the base model.
+
 The first 4 cells in this file have to be run in order for the model to run successfuly. After, the cells are split into:
 
 - Defining the vocabulary
@@ -40,7 +40,7 @@ These cannot be run together - only one can be run at a time.
 The CREATE AN EMBEDDING MATRIX cell is for creating either a one-hot or bag of words embedding for each review.
 In this cell, there are comments for whichever vocabulary of the above is used. One should be uncommented based on the vocabulary above.
 
-If instead you want to run the WORD2VEC embedding, the ALL OF WORD2VEC cell runs the entire algorithm. This can take many hours to run, so instead the LOAD WORD2VEC EMBEDDINGS FROM A FILE cell after it loads the word2vec embeddings from the embeddings.npy file.
+If instead you want to run the WORD2VEC embedding, the ALL OF WORD2VEC cell runs the entire algorithm. This can take many hours to run, and we cannot include an embeddings file as github won't allow large files to be commited.
 
 After this, you can either run the:
 - BASE MODEL cell
@@ -60,6 +60,7 @@ Once the model has finished running, running the final 2 cells will present perf
 In order to run the two layer model:
 1. Open two_layer.ipynb
 2. Run all cells
-However, this can take hours to run without a GPU.
+
+However, this can take hours to run without a GPU. I would include the files of the weights of the trained two-layer model to show results, but github doesn't allow large files to be commited. 
 
 
