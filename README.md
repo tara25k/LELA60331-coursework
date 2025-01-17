@@ -15,6 +15,8 @@ This repository contains the following files:
     - stopwords.txt: a text file of stopwords
 
 # RUNNING THE FINAL ONE LAYER MODEL
+The current cell outputs of final_one_layer.ipynb show the results of running all of the cells in the file.
+
 In order to run the final one layer model:
 1. Open final_one_layer.ipynb
 2. Run all cells
