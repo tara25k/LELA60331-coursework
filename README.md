@@ -62,7 +62,6 @@ If, for example, you wanted to run the model with bigrams, one-hot embeddings an
 In order to run the two layer model:
 1. Open two_layer.ipynb
 2. Run all cells
-
-However, this can take hours to run without a GPU. I would include the files of the weights of the trained two-layer model to show results, but github doesn't allow large files to be commited. 
+However, this can take hours to run without a GPU. I would include the files of the weights of the trained two-layer model to show results, but github doesn't allow large files to be commited. The results in the report are taken from this code that has been run on the university GPU systems for several hours.
 
 
