@@ -18,6 +18,7 @@ This repository contains the following files:
 In order to run the final model:
 1. Open final_one_layer.ipynb
 2. Run all cells
+
 The final two cells show evaluation metrics and the outputs of the weight analysis.
 
 # RUNNING THE EXPERIMENTATION
@@ -35,17 +36,20 @@ There are 4 cells for defining the vocabulary the model uses.
 - VOCABULARY - REMOVED STOPWORDS removes stopwords and lowercases all tokens
 - VOCABULARY - STEM WORDS runs a stemming algorithm on all the tokens to remove suffixes
 - VOCABULARY - BIGRAMS includes bigrams as well as unigrams
+
 These cannot be run together - only one can be run at a time.
 
 The CREATE AN EMBEDDING MATRIX cell is for creating either a one-hot or bag of words embedding for each review.
-In this cell, there are comments for whichever vocabulary of the above is used. One should be uncommented based on the vocabulary above.
+In this cell, there are comments for whichever vocabulary of the above is used. One should be uncommented based on the vocabulary used above.
 
-If instead you want to run the WORD2VEC embedding, the ALL OF WORD2VEC cell runs the entire algorithm. This can take many hours to run, and we cannot include an embeddings file as github won't allow large files to be commited.
+If instead you want to run the WORD2VEC embedding, the ALL OF WORD2VEC cell runs the entire algorithm. This can take many hours to run, and we cannot include an embeddings file to load as github won't allow large files to be commited.
 
 After this, you can either run the:
 - BASE MODEL cell
 - MODEL WITH L2 REGULARISATION cell
 - MODEL WITH BATCH TRAINING cell
+
+Once the model has finished running, running the final 2 cells will present performance metrics and weights analysis.
 
 If, for example, you wanted to run the model with bigrams, one-hot embeddings and L2 regularisation, you would run:
 - The first 4 cells
@@ -54,7 +58,6 @@ If, for example, you wanted to run the model with bigrams, one-hot embeddings an
 - The MODE WITH L2 REGULARISATION cell
 - The final two cells for evaluation
 
-Once the model has finished running, running the final 2 cells will present performance metrics and weights analysis.
 
 # RUNNING THE TWO LAYER MODEL
 In order to run the two layer model:
