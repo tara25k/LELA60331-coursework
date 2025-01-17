@@ -31,8 +31,9 @@ The first 4 cells in this file have to be run in order for the model to run succ
 - Running models
 - Evaluation
 
-There are 4 cells for defining the vocabulary the model uses. 
+There are 5 cells for defining the vocabulary the model uses. 
 - VOCABULARY - BASE MODEL is the basic top 5000 words
+- VOCABULARY - DOWNLOADED VOCAB either uses an English dictionary of popular words as the vocab or positive and negative sentiment words, depending on which part is uncommented
 - VOCABULARY - REMOVED STOPWORDS removes stopwords and lowercases all tokens
 - VOCABULARY - STEM WORDS runs a stemming algorithm on all the tokens to remove suffixes
 - VOCABULARY - BIGRAMS includes bigrams as well as unigrams
@@ -41,8 +42,6 @@ These cannot be run together - only one can be run at a time.
 
 The CREATE AN EMBEDDING MATRIX cell is for creating either a one-hot or bag of words embedding for each review.
 In this cell, there are comments for whichever vocabulary of the above is used. One should be uncommented based on the vocabulary used above.
-
-If instead you want to run the WORD2VEC embedding, the ALL OF WORD2VEC cell runs the entire algorithm. This can take many hours to run, and we cannot include an embeddings file to load as github won't allow large files to be commited.
 
 After this, you can either run the:
 - BASE MODEL cell
